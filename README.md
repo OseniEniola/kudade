@@ -54,6 +54,7 @@ For Backend:
 
 # To start Backend Server
 - In the root directory run command   `npm run start`
+- Backend server port is on 8080
 
 
 # To start Frontend App
