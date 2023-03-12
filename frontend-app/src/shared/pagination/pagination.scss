@@ -1,0 +1,42 @@
+.page-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .tracker {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: #49455f;
+  }
+  .pagination {
+    margin-top: 10px;
+    display: flex;
+    li {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 1px solid #f3f2f7;
+      text-align: center;
+      margin-right: 10px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: #837da1;
+      }
+      &.active {
+        background: #01c38e;
+        border: 1px solid #2a8367;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

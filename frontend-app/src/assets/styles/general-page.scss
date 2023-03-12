@@ -1,0 +1,168 @@
+.page-wrap {
+    padding: 2%;
+    padding-right: 4%;
+    .table-title {
+      display: flex;
+      align-items: center;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      margin-top: 3%;
+      .header {
+        font-size: 1rem;
+        color: #000;
+      }
+    }
+    .delete-button{
+      background-color: red;
+      color: #ffffff;
+      font-size: 0.7rem;
+      padding: 0.6rem;
+      text-align: left;
+      font-family: 'Poppins';
+      font-weight: 500;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .action-btn-wrap {
+      display: flex;
+      margin-top: 10px;
+      align-items: center;
+      justify-content: space-between;
+      .search-wrap {
+          background: #ffffff;
+          border: 1px solid #b6b2ca;
+          box-shadow: 0px 1px 6px rgb(195 203 217 / 20%);
+          border-radius: 24px;
+          padding: 5px 14px;
+          width: 35%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+  
+          .search-icon {
+          color: #b2aec7;
+          vertical-align: middle;
+          font-size:1rem;
+          position: absolute;
+          left: 2.5%;
+          top: 25%;
+        }
+        .search-input {
+          font-family: "Montserrat";
+          font-weight: 300;
+          border: none;
+          width: 100%;
+          font-size: 0.6rem;
+          padding-left: 6%;
+          &:focus-visible{
+            outline: none;
+          }
+        }
+      }
+      .inner-btn-wrap{
+        display: flex;
+        justify-content: right;
+        min-width: 35%;
+        .btn-wrap-drop{
+          width: 45%;
+          margin-left: 5%;
+        }
+        .btn-wrap{
+          margin-left: 5%;
+        }
+     }
+      .btn-wrap{
+
+      }
+      .btn-wrap-drop{
+        width: 17%;
+        position: relative;
+        cursor: pointer;
+       .cta-button{
+        background: #01C38E;
+        width: 100%;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 0.7rem;
+        padding: 0.6rem;
+        padding-left: 10%;
+        text-align: left;
+        font-family: 'Poppins';
+        font-weight: 500;
+        margin-bottom: 10px;
+       } 
+       &::after{
+        content: "";
+        position: absolute;
+        left: 78%;
+        top: 0;
+        border: #fff;
+        width: 1px;
+        background: white;
+        height: 100%;
+       }
+    }
+      .btn-wrap{
+          width: fit-content;
+          position: relative;
+          cursor: pointer;
+         .cta-button{
+          background: #01C38E;
+          width: 100%;
+          border-radius: 8px;
+          color: #ffffff;
+          font-size: 0.7rem;
+          text-align: center;
+          font-family: 'Poppins';
+          font-weight: 500;
+          margin-bottom: 10px;
+          padding: 10px 16px;
+         } 
+      }
+    }
+    .more-dropdown{
+      .dropdown-toggle{
+       padding: 0;
+       border: none;
+       width: 100%;
+      }
+      .add-lesson{
+        background-color: transparent;
+        box-shadow: none;
+      }
+      .dropdown-menu{
+       width: fit-content;
+       inset: -5px auto auto -7.6rem;
+       border:  0.5px solid #01C38E;;
+       .dropdown-item{
+          padding: 10px;
+          img{
+              width: 1rem;
+              margin-right: 10px;
+          }
+      }
+      }
+     }
+     .action-overlay{
+      .action-card-wrap{
+        .form-wrap{
+          .input-wrap{
+            &.free{
+              display: flex;
+              input{
+                width: fit-content;
+                margin-right: 4px;
+              }
+            }
+            .control.text{
+            //  padding: 0.85rem;
+            }
+          }
+        }
+      }
+      
+     }
+  }
+  
