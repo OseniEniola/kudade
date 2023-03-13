@@ -39,7 +39,7 @@ export const getOrderItemsAPI = (page?:any,limit?:any,query?:any) => get(`${url.
 
 
 //Update Seller info
-  export const updateSellerInfoApi= (userinfo:any) => post(`${url.ACCOUNT_UPDATE}`,{},{
+  export const updateSellerInfoApi= (userinfo:any) => put(`${url.ACCOUNT_UPDATE}`,{},{
     auth: {
       username: getLoggedInUser().sellerId,
       password: getLoggedInUser().sellerZipCodePrefix

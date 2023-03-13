@@ -133,20 +133,21 @@ app.delete('/order_items/:id', authenticate, async (req, res) => {
 })
 
 // Set up routes
-app.post('/account', authenticate , async (req, res) => {
+app.put('/account', authenticate , async (req, res) => {
     const sellerId = req.auth.user
     const sellerZipCodePrefix = req.auth.password
     const newCity = req.body.city
     const newState = req.body.state
-
+    console.log(sellerId,sellerZipCodePrefix)
         return Sellers.findOneAndUpdate(
           { seller_id: sellerId, seller_zip_code_prefix: sellerZipCodePrefix },
           { $set: { seller_city: newCity, seller_state: newState } },
           { returnOriginal: false }
         )
       .then(result => {
-        if (result.value) {
-          res.json({ seller_city: result.value.seller_city, seller_state: result.value.seller_state })
+        console.log(result)
+        if (result) {
+          res.json({ seller_city: result.seller_city, seller_state: result.seller_state })
         } else {
           res.status(404).send('Seller not found')
         }
