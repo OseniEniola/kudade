@@ -133,7 +133,7 @@ app.delete('/order_items/:id', authenticate, async (req, res) => {
 })
 
 // Set up routes
-app.post('/account', authenticate ,(req, res) => {
+app.post('/account', authenticate , async (req, res) => {
     const sellerId = req.auth.user
     const sellerZipCodePrefix = req.auth.password
     const newCity = req.body.city
