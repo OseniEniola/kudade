@@ -26,7 +26,6 @@ app.use(basicAuth({
 
 // Middleware function to check for Basic authentication
 const authenticate = (req, res, next) => {
-  console.log("hjksak",req.auth.user,req.auth.password)
 
   if ( !req.auth.user || !req.auth.password) {
     res.set('WWW-Authenticate', 'Basic realm=Authorization Required');
@@ -134,7 +133,7 @@ app.delete('/order_items/:id', authenticate, async (req, res) => {
 })
 
 // Set up routes
-app.put('/account', authenticate ,(req, res) => {
+app.post('/account', authenticate ,(req, res) => {
     const sellerId = req.auth.user
     const sellerZipCodePrefix = req.auth.password
     const newCity = req.body.city

@@ -3,7 +3,6 @@ import toast from 'react-hot-toast';
 
 
 const axiosApi = axios.create({
-    //baseURL:'http://3.95.7.191',
     baseURL:'http://localhost:8080'
 })
 
